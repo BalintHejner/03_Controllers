@@ -70,4 +70,16 @@ public $origins;
             'origin2' => $request->origin
 		]);
     }
+
+    public function search(Request $request) {
+        $filteredCars = [];
+
+
+        return view('cars.index',[
+			'cars' => $filteredCars,
+            'name' => '',
+            'origins' => $this->origins,
+            'origin2' => $request->origin
+		]);
+    }
 }

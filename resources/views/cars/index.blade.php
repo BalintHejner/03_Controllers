@@ -41,6 +41,38 @@
                 </form>
         </div>
     </div>
+
+    <div class="row">
+        <div class="col-12">
+            <form action="/search" method="post">
+                @csrf
+                <label class="col-sm-2 col-form-label">Megnevezés</label>
+                    <div class="col-sm-4">
+                        <input type="text" name="name2" value="" class="form-control">
+                    </div>
+
+
+                    <label class="col-sm-2 col-form-label">Származási hely: </label>
+                    <div class="col-sm-3">
+                        <select name="origin3" class="form-control">
+                            <option value="0" selected>Kérem válasszon</option>
+                            @foreach ($origins as $origin)
+                                @if ($origin == $origin2)
+
+                                @else
+                                    <option value="" ></option>
+                                @endif
+                            @endforeach
+                        </select>
+                    </div>
+
+                    <div class="col-sm-2">
+                        <button class="btn btn-primary" name="btn_search" type="submit">Keresés</button>
+                    </div>
+            </form>
+        </div>
+    </div>
+
     <div class="row">
         <table class="table">
             <thead>

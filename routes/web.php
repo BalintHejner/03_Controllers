@@ -27,4 +27,5 @@ Route::get('/passing-data',[PageController::class,'passingData']);
 Route::get('/cars',[CarsController::class,'index']);
 Route::post('/cars/search-by-name',[CarsController::class,'searchByName']);
 Route::post('/cars/search-by-origin',[CarsController::class,'searchByOrigin']);
+Route::post('/search', [CarsController::class,'search']);
 
