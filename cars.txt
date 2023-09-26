@@ -1,0 +1,7 @@
+$cars   =   array(
+            array("Name"=>"Volvo","Model"=>"GH-234","Grade"=>5),
+            array("Name"=>"BMW","Model"=>"PAJD-231","Grade"=>4),
+            array("Name"=>"Saab","Model"=>"OWED-7554","Grade"=>3.5
+                    ,'Parts'=>array('light','engine','wheel')
+                ),
+            array("Name"=>"Land Rover","Model"=>"LDKS-01454",4.5)
